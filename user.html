@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fantasy Football League - Welcome</title>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">		
+		<link href = "css/user1.css" rel = "stylesheet">
+		<script src = "js/jquery-1.11.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			function getUser() {
+				var y = localStorage.getItem("Username");
+				$('#user').html("Hello " + y);
+			}
+			function getRank() {
+				window.location = "rank.html";
+			}
+		</script>
+	<!---	<script src = "js/user.js"></script>--->
+	</head>
+	<body onload = "getUser()">
+		<div class = "d1">
+			<h1 text-align = 'center' style = "color : #008000; font-size : 39pt;">WELCOME TO FANTASY FOOTBALL LEAGUE</h1>
+			<h1 text-align = 'center' style = "color : #008000; font-size : 25pt;" id = "user"></h1>
+		<!---	<input type = "submit" class = "reg2"  name = "register-submit" id = "submit" tabindex = "1" value = "CHECK RANK" onclick = "getRank()">--->
+		</div>
+		<div class = "d1">
+			<div class = "card" style = "width : 30%">
+				<a href = "pages/squad_selection.html">
+				<img src = "images/ffl2.jpeg" alt = "Image" style = "max-width : 100%; max-height : 100%">
+				</a>			
+			</div>
+			<div class = "card" style = "width : 30%">
+				<a href = "pages/manage.html">
+					<img src = "images/ffl3.png" alt = "Image" style = "max-width : 100%; max-height : 100%">
+				</a>
+			</div>
+			<div class = "card" style = "width : 30%">
+				<a href = "pages/fixture.html">
+					<img src = "images/fixture.png" alt = "Image" style = "max-width : 100%; max-height : 100%">
+				</a>
+			</div>
+		<!---	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>--->
+			<div class = "card" style = "width : 30%">
+				<a href = "pages/player.html">
+					<img src = "images/player.jpg" alt = "image" style = "max-width : 100%; max-height : 100%">
+				</a>
+			</div>
+			<div class = "card" style = "width : 30%">
+				<a href = "pages/team.html">
+					<img src = "images/team1.png" alt = "Image" style = "max-width : 100%; max-height : 100%"> 
+				</a>
+			</div>
+			<div class = "card" style = "width : 30%">
+				<a href = "pages/faq.html">
+					<img src = "images/faq.png" alt = "Image" style = "max-width : 100%; max-height : 100%">
+				</a>
+			</div>
+			<div class = "card" style = "width : 30%">
+				
+			</div>
+			<div class = "card" style = "width : 30%">
+				<a href = "pages/rank.html">
+					<img src = "images/leaderboard.png" alt = "Image" style = "max-width : 100%; max-height : 100%">
+				</a>
+			</div>
+			<div class = "card" style = "width : 30%">
+				
+			</div>
+		</div>
+	</body>
+</html>
+

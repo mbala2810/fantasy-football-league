@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fantasy Football League - Fixtures</title>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">		
+		<link href = "../css/sign_in.css" rel = "stylesheet">
+		<script src = "../js/jquery-1.11.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src = "../js/fixture.js"></script>
+		<style>
+			h2 {
+    			text-align: center;
+			}
+		</style>
+	</head>
+	<body onload="getDetails()">
+		<div class = "d1">
+			<h1 style = "color : #008000; font-size : 40pt;">FANTASY FOOTBALL LEAGUE</h1>
+			<h3 style = "font-size : 25pt; color : #008000;">FIXTURES</h3>
+		</div>
+		<div class = "d3">
+			<div class = "d2">
+				<br>
+				<div class = "row">
+				<div class = "col-xs-6">
+					<div class = "col-xs-4">
+						<input type = "submit" name = "skip" id = "skip" tabindex = "4" class = "form-control btn btn-skip" value = "<">
+					</div>
+				</div>			
+				<div class = "col-xs-6">
+					<div class = "col-xs-4">
+						<input type = "submit" name = "next" id = "next" tabindex = "4" class = "form-control btn btn-next" value = ">">
+					</div>
+				</div>	
+			</div>
+			<h2 style = "font-size : 18pt; color : #008000; text-align = 'center';">GAMEWEEK <span id = "no">1</span></h2><br>
+			<p style = "font-size : 15pt;" align = 'center' id = "a1"></p>
+			<p style = "font-size : 15pt;" align = 'center' id = "b1"></p><hr align = "center" color="#D3D3D3" width = 95%>
+			<p style = "font-size : 15pt;" align = 'center' id = "a2"></p>
+			<p style = "font-size : 15pt;" align = 'center' id = "b2"></p><hr align = "center" color="#D3D3D3" width = 95%>
+			<p style = "font-size : 15pt;" align = 'center' id = "a3"></p>
+			<p style = "font-size : 15pt;" align = 'center' id = "b3"></p><hr align = "center" color="#D3D3D3" width = 95%>
+			<p style = "font-size : 15pt;" align = 'center' id = "a4"></p>
+			<p style = "font-size : 15pt;" align = 'center' id = "b4"></p><hr align = "center" color="#D3D3D3" width = 95%>
+			<p style = "font-size : 15pt;" align = 'center' id = "a5"></p>
+			<p style = "font-size : 15pt;" align = 'center' id = "b5"></p><hr align = "center" color="#D3D3D3" width = 95%>
+			<p style = "font-size : 15pt;" align = 'center' id = "a6"></p>
+			<p style = "font-size : 15pt;" align = 'center' id = "b6"></p><hr align = "center" color="#D3D3D3" width = 95%>
+			<p style = "font-size : 15pt;" align = 'center' id = "a7"></p>
+			<p style = "font-size : 15pt;" align = 'center' id = "b7"></p><hr align = "center" color="#D3D3D3" width = 95%>
+			<p style = "font-size : 15pt;" align = 'center' id = "a8"></p>
+			<p style = "font-size : 15pt;" align = 'center' id = "b8"></p><hr align = "center" color="#D3D3D3" width = 95%>
+			<p style = "font-size : 15pt;" align = 'center' id = "a9"></p>
+			<p style = "font-size : 15pt;" align = 'center' id = "b9"></p><hr align = "center" color="#D3D3D3" width = 95%>
+			<p style = "font-size : 15pt;" align = 'center' id = "a10"></p>
+			<p style = "font-size : 15pt;" align = 'center' id = "b10"></p>
+			<br>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fantasy Football League - Rank</title>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">		
+		<link href = "../css/sign_in.css" rel = "stylesheet">
+		<script src = "../js/jquery-1.11.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src = "../js/user.js"></script>
+		<style>
+			table {
+    			font-family: arial, sans-serif;
+   				border-collapse: collapse;
+    			width: 75%;
+    			margin-left: 12.5%;
+			}
+
+			td, th {
+    			border: 1px solid #dddddd;
+    			text-align: center;
+    			padding: 8px;
+    			color : red;
+    			background-color : white;
+			}
+			h2 {
+    			text-align: center;
+			}
+		</style>
+	</head>
+	<body onload = "getDetails()">
+		<div class = "d1">
+			<h1 text-align = 'center' style = "color : #008000; font-size : 39pt;">LEADERBOARD</h1>
+			<h1 text-align = 'center' style = "color : #008000; font-size : 20pt;" id = "user"></h1>
+		</div>
+		<div class = "d1">
+			<table id = "table">
+				<th style = "text-align :center">RANK</th>
+				<th style = "text-align :center">USERNAME</th>
+				<th style = "text-align :center">POINTS</th>
+			</table>
+		</div>
+	</body>
+</html>
+

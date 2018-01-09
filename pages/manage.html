@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fantasy Football League - Manage Squad</title>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">		
+		<link href = "../css/sign_in.css" rel = "stylesheet">
+		<link href = "../css/styles.css" rel = "stylesheet">
+		<script src = "../js/jquery-1.11.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src = "../js/manage.js"></script>
+		<style>
+			table {
+    			font-family: arial, sans-serif;
+   				border-collapse: collapse;
+   				margin: 2.5%;
+    			width: 100%;
+			}
+
+			td, th {
+    			border: 1px solid #dddddd;
+    			text-align: left;
+    			padding: 8px;
+			}
+			h2 {
+    			text-align: center;
+			}
+		</style>
+	</head>
+	<body onload="getDetails()">
+		<div class = "d1">
+			<h1 style = "color : #008000; font-size : 40pt;">FANTASY FOOTBALL LEAGUE</h1>
+			<h3 style = "font-size : 25pt; color : #008000;">MANAGE YOUR FAVORITE PLAYERS</h3>
+		</div>
+		<div class = "d4">
+			<h3 text-align = 'left' style = "font-size : 20pt; color : #008000;">&emsp;PLAYING ELEVEN</h3>
+			<p text-align = 'left' style = "font-size : 20pt; color : #008000;">&emsp;&nbsp;&nbsp;FORMATION<br>&emsp;
+			<select name="sel-form" id="sel-form" style = "font-size : 15pt;" onchange="formation(document.getElementById('sel-form').value)">        
+     			<option value="attack">3-5-2</option>
+            	<option value="defense">4-4-2</option>
+            	<option value="balance">4-3-3</option>
+        	</select></p>
+			<table id = "table">
+				<th></th>
+				<th>PLAYER</th>
+        		<th>TEAM</th>
+				<th>POSITION</th>
+			</table>
+			<div class = "submit-squad">
+				<input type = "submit" class = "reg1"  name = "register-submit" id = "submit" tabindex = "1" value = "SUBMIT PLAYING ELEVEN">
+			</div>
+		</div>
+		<div class = "d4">
+			<h3 text-align = 'left' style = "font-size : 20pt; color : #008000;">&emsp;YOUR SQUAD</h3>
+			<table id = "mytable">
+				<tr>
+					<th><button></button></th>
+					<th class = "select">PLAYER</th>
+        			<th class = "select">TEAM 
+     				   <select name="sel-team" id="sel-team" onchange="team1(this.value, document.getElementById('sel-pos').value)">        
+     				   		<option value="Any">Any</option>
+            			    <option value="AFC Bournemouth">AFC Bournemouth</option>
+            			    <option value="Arsenal FC">Arsenal FC</option>
+                			<option value="Brighton and Hove Albion FC">Brighton & Hove Albion FC</option>
+                			<option value="Burnley FC">Burnley FC</option>
+                			<option value="Chelsea FC">Chelsea FC</option>
+                			<option value="Crystal Palace FC">Crystal Palace FC</option>
+                			<option value="Everton FC">Everton FC</option>
+                			<option value="Huddersfield Town AFC">Huddersfield Town AFC</option>
+                			<option value="Leicester City FC">Leicester City FC</option>
+                			<option value="Liverpool FC">Liverpool FC</option>
+                			<option value="Manchester City FC">Manchester City FC</option>
+                			<option value="Manchester United FC">Manchester United FC</option>
+                			<option value="Newcastle United FC">Newcastle United FC</option>
+                			<option value="Southampton FC">Southampton FC</option>
+                			<option value="Stoke City FC">Stoke City FC</option>
+                			<option value="Swansea City AFC">Swansea City AFC</option>
+                			<option value="Tottenham Hotspur FC">Tottenham Hotspur FC</option>
+                			<option value="Watford FC">Watford FC</option>
+                			<option value="West Bromwich Albion FC">West Bromwich Albion FC</option>
+                			<option value="West Ham United FC">West Ham United FC</option>
+        				</select>
+        			</th>
+        			<th class = "select">POSITION
+     				   <select name="sel-pos" id="sel-pos" onchange="team1(document.getElementById('sel-team').value, this.value)">        
+     				   		<option value="Any">Any</option>
+            			    <option value="Goalkeeper">Goalkeeper</option>
+            			    <option value="Defender">Defender</option>
+                			<option value="Midfielder">Midfielder</option>
+                			<option value="Forward">Forward</option>
+        				</select>
+        			</th>
+				</tr>	
+			</table>
+			<br><br>
+		</div>
+	</body>
+</html>

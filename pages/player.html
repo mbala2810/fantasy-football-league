@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fantasy Football League - Player Info</title>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">		
+		<link href = "../css/sign_in.css" rel = "stylesheet">
+		<script src = "../js/jquery-1.11.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src = "../js/player.js"></script>
+		<style>
+			h2 {
+    			text-align: center;
+			}
+		</style>
+	</head>
+	<body onload="getDetails()">
+		<div class = "d1">
+			<h1 style = "color : #008000; font-size : 40pt;">FANTASY FOOTBALL LEAGUE</h1>
+			<h3 style = "font-size : 25pt; color : #008000;">PLAYER INFORMATION</h3>
+		</div>
+		<div class = "d3">
+			<div class = "d2">
+				<br>
+				<div class = "row">
+				<div class = "col-xs-6">
+					<div class = "col-xs-4">
+						<input type = "submit" name = "skip" id = "skip" tabindex = "4" class = "form-control btn btn-skip" value = "<">
+					</div>
+				</div>			
+				<div class = "col-xs-6">
+					<div class = "col-xs-4">
+						<input type = "submit" name = "next" id = "next" tabindex = "4" class = "form-control btn btn-next" value = ">">
+					</div>
+				</div>	
+			</div>
+			<h2 style = "font-size : 18pt; color : #008000; text-align = 'center';">PLAYER <span id = "no">1</span></h2><br>
+			<h2 style = "font-size : 18pt; color : #008000; text-align = 'center';" id = "a1"></h2><br><br>
+			<p style = "font-size : 15pt; color : #008000;" align = 'left'>&emsp;&emsp;&emsp;&emsp;Team Name : <b><span id = "a2"></span></b></p>
+			<p style = "font-size : 15pt; color : #008000;" align = 'left'>&emsp;&emsp;&emsp;&emsp;Nationality : <b><span id = "a3"></span></b></p>
+			<p style = "font-size : 15pt; color : #008000;" align = 'left'>&emsp;&emsp;&emsp;&emsp;Date Of Birth : <b><span id = "a4"></span></b></p>
+			<p style = "font-size : 15pt; color : #008000;" align = 'left'>&emsp;&emsp;&emsp;&emsp;Position : <b><span id = "a5"></span></b></p>
+			<p style = "font-size : 15pt; color : #008000;" align = 'left'>&emsp;&emsp;&emsp;&emsp;Price : <b><span id = "a6"></span></b></p>
+			<!---<p style = "font-size : 15pt; color : #008000;" align = 'left'>&emsp;&emsp;&emsp;&emsp;Points : <b><span id = "a7"></span></b></p>--->
+			<br>
+		</div>
+	</body>
+</html>

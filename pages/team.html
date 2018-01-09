@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fantasy Football League - Team Info</title>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">		
+		<link href = "../css/sign_in.css" rel = "stylesheet">
+		<script src = "../js/jquery-1.11.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src = "../js/team.js"></script>
+		<style>
+			h2 {
+    			text-align: center;
+			}
+		</style>
+	</head>
+	<body onload="getDetails()">
+		<div class = "d1">
+			<h1 style = "color : #008000; font-size : 40pt;">FANTASY FOOTBALL LEAGUE</h1>
+			<h3 style = "font-size : 25pt; color : #008000;">TEAM INFORMATION</h3>
+		</div>
+		<div class = "d3">
+			<div class = "d2">
+				<br>
+				<div class = "row">
+				<div class = "col-xs-6">
+					<div class = "col-xs-4">
+						<input type = "submit" name = "skip" id = "skip" tabindex = "4" class = "form-control btn btn-skip" value = "<">
+					</div>
+				</div>			
+				<div class = "col-xs-6">
+					<div class = "col-xs-4">
+						<input type = "submit" name = "next" id = "next" tabindex = "4" class = "form-control btn btn-next" value = ">">
+					</div>
+				</div>	
+			</div>
+			<h2 style = "font-size : 18pt; color : #008000; text-align = 'center';">TEAM <span id = "no">1</span></h2><br>
+			<h2 style = "font-size : 18pt; color : #008000; text-align = 'center';" id = "a1"></h2><br><br>
+			<p style = "font-size : 15pt; color : #008000;" align = 'left'>&emsp;&emsp;&emsp;&emsp;Nickname   : <b><span id = "a2"></span></b></p>
+			<p style = "font-size : 15pt; color : #008000;" align = 'left'>&emsp;&emsp;&emsp;&emsp;Owner Name : <b><span id = "a3"></span></b></p>
+			<p style = "font-size : 15pt; color : #008000;" align = 'left'>&emsp;&emsp;&emsp;&emsp;Manager Name : <b><span id = "a4"></span></b></p>
+			<p style = "font-size : 15pt; color : #008000;" align = 'left'>&emsp;&emsp;&emsp;&emsp;Year Of Formation : <b><span id = "a5"></span></b></p>
+			<p style = "font-size : 15pt; color : #008000;" align = 'left'>&emsp;&emsp;&emsp;&emsp;Home Arena : <b><span id = "a6"></span></b></p>
+			<p style = "font-size : 15pt; color : #008000;" align = 'left'>&emsp;&emsp;&emsp;&emsp;Arena Location: <b><span id = "a7"></span></b></p>
+			<p style = "font-size : 15pt; color : #008000;" align = 'left'>&emsp;&emsp;&emsp;&emsp;Capacity : <b><span id = "a8"></span></b></p>
+			<p style = "font-size : 15pt; color : #008000;" align = 'left'>&emsp;&emsp;&emsp;&emsp;Year Of Creation Of Arena : <b><span id = "a9"></span></b></p>
+			<br>
+		</div>
+	</body>
+</html>
