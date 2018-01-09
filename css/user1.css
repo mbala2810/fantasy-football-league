@@ -1,0 +1,70 @@
+body{
+	padding-top : 25px;
+	background-color : #D6EAF8;
+	background-image : url("../images/ffl.jpeg");
+    background-size: cover;
+}
+.d1{
+	width : 100%;
+	float : left;
+	padding : 0 10px 0 20px;
+}
+.login-form{
+	padding-bottom : 25px;
+	padding-top : 25px;
+	display : inline-block;
+}
+.ip{
+	width : 435px;
+	height : 40px;
+	font-size : 18pt;
+}
+.reg{
+	background-color : #008000;
+	width : 300px;
+	font-size : 32px;
+	height : 55px;
+	color : #fff;
+}
+.reg:hover{
+	color : #fff;
+	background-color : #008080;
+}
+.reg2{
+	background-color : #008000;
+	width : 300px;
+	font-size : 32px;
+	height : 55px;
+	color : #fff;
+	margin-top : -60px;
+	margin-right : 60px;
+	float : right;
+}
+.reg2:hover{
+	color : #fff;
+	background-color : #008080;
+}
+.para{
+	color : #17202A;
+	font-size : 18pt;
+	text-align : left;
+}
+
+.card {
+    box-shadow : 0 4px 8px 0 white;
+    transition : 0.3s;
+    float : left;
+    width : 100%;
+    vertical-align : middle; 
+    margin : 1%;
+    text-align : center;
+   /* padding : 0 25px 0 25px;*/
+}
+
+.card:hover {
+    box-shadow: 0 15px 30px 0 white;
+}
+
+.d2{
+	padding : 0 25px 0 25px;
+}
